@@ -1,0 +1,26 @@
+<template>
+     <lightning-card title="Pesquisar Voo">
+          <div class='slds-p-horizontal_small'>
+            <lightning-combobox
+            name="Partida"
+            label="Partida"
+            value={partida}
+            placeholder="Selecione o Aeroporto"
+            options={aeroportosPartida}
+            onchange={selecionarPartida} >
+          </lightning-combobox>                    
+          </div>
+          <div class='slds-p-horizontal_small'>
+               <lightning-combobox
+               name="Destino"
+               label="Destino"
+               value={destino}
+               placeholder="Selecione o Aeroporto"
+               options={aeroportosDestino}
+               onchange={selecionarDestino} >
+          </lightning-combobox>                    
+            
+       </div>
+          </lightning-card>
+</template>       
+         

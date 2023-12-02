@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Pesquisar Viagem">
+<div class='slds-p-horizontal_small'>
+        <lightning-combobox
+          name="Distancia"
+          label="Distancia"
+          value={distancia}
+          placeholder="Selecione a Distancia"
+          options={distanciaVoo}
+          onchange={selecionarDistancia} >
+        </lightning-combobox>
+     </div>
+    </lightning-card>
+</template>
